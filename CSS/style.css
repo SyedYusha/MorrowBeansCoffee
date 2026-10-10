@@ -57,6 +57,7 @@ header .navLinks {
 }
 
 header .navLinks a {
+  display: flex;
   color: var(--bg-color);
   font-size: 1rem;
   text-transform: uppercase;
@@ -78,6 +79,13 @@ header .navIcons {
   column-gap: .8rem;
 }
 
+header .navLinks .bx {
+  font-size: 22px;
+  color: var(--bg-color);
+  transition: .2s all linear;
+  padding:0 5px;
+  
+}
 header .navIcons .bx {
   padding: 5px;
   border-radius: 5px;
@@ -322,4 +330,62 @@ header .search-box input {
 .customer-container .customer-cards:hover{
   background: var(--sc-color);
   transition: .2s all linear;
+}
+
+.footer{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, auto));
+  gap: 1.5rem;
+}
+.footer .footer-box h3{
+  font-size: .938rem;
+  margin-bottom: 10px;
+}
+.footer .footer-box p{
+  font-size: .938rem;
+  margin-bottom: 10px;
+}
+.footer .footer-box .social{
+  display: flex;
+  align-items: center;
+  column-gap: .5rem;
+}
+.footer .footer-box .social a .bx{
+  font-size: 24px;
+  color: var(--text-color);
+  padding: 10px;
+  background: var(--sc-color);
+  border-radius: .2rem;
+  transition: .2s all linear;
+
+}
+.footer .footer-box .social a .bx:hover{
+  background: var(--main-color);
+  color: var(--bg-color);
+}
+
+.footer .footer-box li a{
+  color: var(--text-color);
+}
+.footer .footer-box li a:hover{
+  color: var(--main-color);
+}
+.footer .footer-box .contact{
+  display: flex;
+  flex-direction: column;
+  row-gap: .5rem;
+}
+.footer .footer-box .contact .span{
+  display: flex;
+  align-items: center;
+}
+.footer .footer-box .contact i{
+  font-size: 20px;
+  margin-right: 1rem;
+}
+
+.copyright{
+  padding: 20px;
+  text-align: center;
+  background: var(--sc-color);
 }
