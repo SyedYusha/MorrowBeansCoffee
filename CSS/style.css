@@ -43,7 +43,10 @@ header {
   justify-content: space-between;
   padding: 5px 100px;
   transition: .5s linear;
+}
+header.shadow{
   background: var(--text-color);
+box-shadow: var(--bx-shadow);
 }
 
 header .logo img {
